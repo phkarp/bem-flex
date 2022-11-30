@@ -1,3 +1,9 @@
-.open {
-  border: 3px;
+@import url("font.css");
+
+.body {
+    margin: 0;
+    padding: 0;
 }
+
+
+

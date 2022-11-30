@@ -1,8 +1,84 @@
-<html>
- <head>
- <link rel="stylesheet" href="style.css"> 
- </head>  
-  <body>
-   <p class="open"> Тут будет текст с рамкой </p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=3.0" name="viewport">
+    <link href="style.css" rel="stylesheet">
+    <link href="font.css" rel="stylesheet">
+    <link href="mobile.css" rel="stylesheet" media="(min-width: 320px)">
+    <link href="tablet.css" rel="stylesheet" media="(min-width: 768px)">
+    <link href="desktop.css" rel="stylesheet" media="(min-width: 1120px)">
+    <title>Title</title>
+</head>
+<body class="body">
+<header class="header body--out-desktop">
+<article class="upper-menu">
+    <a class="upper-menu__burger" href="#">
+        <img src="upper-menu-image/burger.svg" class="upper-menu__burger-img" alt="">
+    </a>
+    <img src="upper-menu-image/divider.svg" class="upper-menu__divider body--out-mobile" alt="">
+    <img src="upper-menu-image/logo.svg" class="logo logo--margin" alt="">
+    <a class="upper-menu__call" href="#">
+        <img src="upper-menu-image/call.svg" class="upper-menu__call-img body--out-mobile" alt="">
+    </a>
+    <a class="upper-menu__chat" href="#">
+        <img src="upper-menu-image/chat.svg" class="upper-menu__chat-img body--out-mobile" alt="">
+    </a>
+    <a class="upper-menu__profile" href="#">
+        <img src="upper-menu-image/profile.svg" class="upper-menu__profile-img body--out-mobile" alt="">
+    </a>
+    <img src="upper-menu-image/divider.svg" class="upper-menu__divider" alt="">
+    <a class="repair repair--position" href="#">
+        <img src="repair.svg" class="repair__repair-img" alt="">
+    </a>
+    <a class="check-status check-status--position" href="#">
+        <img src="upper-menu-image/checkstatus.svg" class="check-status__checkstatus-img" alt="">
+    </a>
+</article>
+</header>
+<main class="main">
+    <section class="title-services">
+        <img class="title-services__highlight" src="highlight.svg" alt="">
+        <p class="title-services__title">Услуги и сервисы</p>
+        <a class="repair repair--position body--in-desktop" href="#">
+            <p class="repair__repair-text">Оставить заявку</p>
+            <img src="repair.svg" class="repair__repair-img" alt="">
+        </a>
+        <a class="check-status check-status--position body--in-desktop" href="#">
+            <p class="check-status__checkstatus-text">Статус ремонта</p>
+            <img src="upper-menu-image/checkstatus.svg" class="check-status__checkstatus-img" alt="">
+        </a>
+    </section>
+    <nav class="slide-menu">
+        <ul class="list-menu list-menu__elem">
+            <li class="list-menu__item list-menu__item--active"><a class="list-menu__item-link" href="#">Ремонтируемые бренды</a></li>
+            <li class="list-menu__item"><a class="list-menu__item-link" href="#">Ремонтируемые устройства</a></li>
+            <li class="list-menu__item"><a class="list-menu__item-link" href="#">Цены на услуги</a></li>
+            <li class="list-menu__item"><a class="list-menu__item-link" href="#">Адреса сервисных центров</a></li>
+            <li class="list-menu__item"><a class="list-menu__item-link" href="#">Специальные цены</a></li>
+            <li class="list-menu__item"><a class="list-menu__item-link" href="#">Отзывы</a></li>
+        </ul>
+    </nav>
+    <section class="about">
+        <section class="about__article">
+        <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
+            гарантией производителя.</p>
+        <p class="about__text body--out-mobile">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.
+        <span class="about__text body--in-desktop">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+        <article class="read-more">
+            <img src="expand.svg" alt="" class="read-more__arrow">
+            <a href="#" class="read-more__text"> Читать далее</a>
+        </article>
+        </section>
+        <img src="cps.png" class="about__image-about" alt="">
+
+    </section>
+
+</main>
+<footer>
+
+</footer>
+
+</body>
 </html>
