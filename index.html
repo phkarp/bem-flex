@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=3.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="style.css" rel="stylesheet">
     <link href="font.css" rel="stylesheet">
     <link href="mobile.css" rel="stylesheet" media="(min-width: 320px)">
@@ -11,69 +11,65 @@
     <title>Title</title>
 </head>
 <body class="body">
-<header class="header body--out-desktop">
-<article class="upper-menu">
+<header class="header">
+    <article class="upper-menu-desktop">
+        <h1 class="title-services title-services__margin">Услуги и сервисы</h1>
+        <section class="upper-menu-desktop__btn">
+            <button class="upper-menu-desktop__repair">Оставить заявку</button>
+            <a class="check-status check-status--position " href="#">
+               <p class="check-status__checkstatus-text">Статус ремонта</p>
+            </a>
+        </section>
+    </article>
+
+    <article class="upper-menu upper-menu--off-desktop">
     <a class="upper-menu__burger" href="#">
         <img src="upper-menu-image/burger.svg" class="upper-menu__burger-img" alt="">
     </a>
-    <img src="upper-menu-image/divider.svg" class="upper-menu__divider body--out-mobile" alt="">
-    <img src="upper-menu-image/logo.svg" class="logo logo--margin" alt="">
-    <a class="upper-menu__call" href="#">
-        <img src="upper-menu-image/call.svg" class="upper-menu__call-img body--out-mobile" alt="">
+    <img src="upper-menu-image/divider.svg" class="upper-menu__divider upper-menu--off-mobile " alt="">
+    <img src="upper-menu-image/logo.svg" class="logo logo--margin " alt="">
+    <a class="upper-menu__call upper-menu--off-mobile" href="#">
+        <img src="upper-menu-image/call.svg" class="upper-menu__call-img " alt="">
     </a>
-    <a class="upper-menu__chat" href="#">
-        <img src="upper-menu-image/chat.svg" class="upper-menu__chat-img body--out-mobile" alt="">
+    <a class="upper-menu__chat upper-menu--off-mobile" href="#">
+        <img src="upper-menu-image/chat.svg" class="upper-menu__chat-img  " alt="">
     </a>
-    <a class="upper-menu__profile" href="#">
-        <img src="upper-menu-image/profile.svg" class="upper-menu__profile-img body--out-mobile" alt="">
+    <a class="upper-menu__profile upper-menu--off-mobile" href="#">
+        <img src="upper-menu-image/profile.svg" class="upper-menu__profile-img " alt="">
     </a>
-    <img src="upper-menu-image/divider.svg" class="upper-menu__divider" alt="">
+    <img src="upper-menu-image/divider.svg" class="upper-menu__divider " alt="">
     <a class="repair repair--position" href="#">
         <img src="repair.svg" class="repair__repair-img" alt="">
     </a>
     <a class="check-status check-status--position" href="#">
         <img src="upper-menu-image/checkstatus.svg" class="check-status__checkstatus-img" alt="">
     </a>
-</article>
+    </article>
 </header>
 <main class="main">
-    <section class="title-services">
-        <img class="title-services__highlight" src="highlight.svg" alt="">
-        <p class="title-services__title">Услуги и сервисы</p>
-        <a class="repair repair--position body--in-desktop" href="#">
-            <p class="repair__repair-text">Оставить заявку</p>
-            <img src="repair.svg" class="repair__repair-img" alt="">
-        </a>
-        <a class="check-status check-status--position body--in-desktop" href="#">
-            <p class="check-status__checkstatus-text">Статус ремонта</p>
-            <img src="upper-menu-image/checkstatus.svg" class="check-status__checkstatus-img" alt="">
-        </a>
-    </section>
+        <h1 class="title-services title-services__margin title-services--off-desktop">Услуги и сервисы</h1>
     <nav class="slide-menu">
-        <ul class="list-menu list-menu__elem">
-            <li class="list-menu__item list-menu__item--active"><a class="list-menu__item-link" href="#">Ремонтируемые бренды</a></li>
-            <li class="list-menu__item"><a class="list-menu__item-link" href="#">Ремонтируемые устройства</a></li>
-            <li class="list-menu__item"><a class="list-menu__item-link" href="#">Цены на услуги</a></li>
-            <li class="list-menu__item"><a class="list-menu__item-link" href="#">Адреса сервисных центров</a></li>
-            <li class="list-menu__item"><a class="list-menu__item-link" href="#">Специальные цены</a></li>
-            <li class="list-menu__item"><a class="list-menu__item-link" href="#">Отзывы</a></li>
+        <ul class="slide-menu__list-menu list-menu__elem">
+            <li class="slide-menu__list-menu--item slide-menu__list-menu--item--active"><a class="slide-menu__list-menu--item--link" href="#">Ремонтируемые бренды</a></li>
+            <li class="slide-menu__list-menu--item"><a class="slide-menu__list-menu--item--link" href="#">Ремонтируемые устройства</a></li>
+            <li class="slide-menu__list-menu--item"><a class="slide-menu__list-menu--item--link" href="#">Цены на услуги</a></li>
+            <li class="slide-menu__list-menu--item"><a class="slide-menu__list-menu--item--link" href="#">Адреса сервисных центров</a></li>
+            <li class="slide-menu__list-menu--item"><a class="slide-menu__list-menu--item--link" href="#">Специальные цены</a></li>
+            <li class="slide-menu__list-menu--item"><a class="slide-menu__list-menu--item--link" href="#">Отзывы</a></li>
         </ul>
     </nav>
-    <section class="about">
+    <article class="about">
         <section class="about__article">
         <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
             Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
             гарантией производителя.</p>
-        <p class="about__text body--out-mobile">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.
-        <span class="about__text body--in-desktop">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
-        <article class="read-more">
-            <img src="expand.svg" alt="" class="read-more__arrow">
-            <a href="#" class="read-more__text"> Читать далее</a>
-        </article>
+        <p class="about__text about__text--off-mobile">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.
+        <span class="about__text about__text--on-desktop">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+        <button class="about__button">Читать далее</button>
         </section>
         <img src="cps.png" class="about__image-about" alt="">
 
-    </section>
+    </article>
 
 </main>
 <footer>
