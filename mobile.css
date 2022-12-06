@@ -11,6 +11,9 @@ html {
     .about__text--on-desktop {
         display: none;
     }
+    .about__text--off-mobile {
+        display: none;
+    }
 
     .upper-menu--off-desktop {
         display: flex;
