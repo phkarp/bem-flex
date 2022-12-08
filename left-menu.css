@@ -82,7 +82,9 @@ html {
     margin-bottom: 32px;
     padding-left: 20px;
 }
-
+.list-menu__item:last-child {
+    margin-bottom: 0;
+}
 .list-menu__item-link {
     display: block;
     color: black;
