@@ -7,10 +7,6 @@ html {
     box-sizing: inherit;
 }
 
-.upper-menu--off-mobile {
-    display: block;
-}
-
 .about__text--on-desktop {
     display: block;
 }
@@ -101,16 +97,33 @@ html {
     display: flex;
     align-items: center;
 }
-
 .upper-menu-desktop__repair {
-    display: block;
+    display: inline-block;
     font-family: "TT Lakes Bold", sans-serif;
     font-size: 16px;
     color: #1B1C21;
-    width: 250px;
+    width: 200px;
+    height: 55px;
+    padding: 10px;
+    line-height: 32px;
+    position: relative;
+}
+
+.upper-menu-desktop__repair-btn {
+    display: block;
+    position: absolute;
+    width: 40px;
     height: 40px;
     border: none;
-    background: #F8F8F8 url("repair.svg") no-repeat 200px 0;
+    background: #FF3E79;
+    border-radius: 50%;
+    top: 7px;
+    right: 0;
+}
+.upper-menu-desktop__repair-btn--icon {
+    background-image: url("upper-menu-image/Group.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .main {
@@ -153,6 +166,7 @@ html {
     border-radius: 6px;
     color: #1B1C21;
 }
+
 .about {
     display: flex;
     flex-direction: row;
@@ -188,3 +202,5 @@ html {
     margin-left: 36px;
     margin-bottom: 49px;
 }
+
+

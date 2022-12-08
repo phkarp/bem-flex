@@ -6,10 +6,6 @@
         box-sizing: inherit;
     }
 
-    .upper-menu--off-mobile {
-        display: block;
-    }
-
     .upper-menu--off-desktop {
         display: flex;
     }
@@ -91,6 +87,7 @@
         border-radius: 6px;
         color: #1B1C21;
     }
+
     .about {
         display: flex;
         flex-direction: row;

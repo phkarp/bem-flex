@@ -107,7 +107,7 @@ html {
 
     }
 
-.about__button {
+    .about__button {
          margin-left: 16px;
      }
     .about__image-about {
@@ -115,3 +115,4 @@ html {
         max-width: 400px;
         margin: 0 auto;
     }
+
