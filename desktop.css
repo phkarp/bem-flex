@@ -112,26 +112,26 @@ html {
     margin-bottom: 10px;
 
 }
-.repair-btn {
+.btn {
     display: block;
-    position: absolute;
     width: 40px;
     height: 40px;
     border: none;
     background: #FF3E79;
     border-radius: 50%;
+}
+
+.btn__repair {
+    position: absolute;
     top: 7px;
     right: 0;
 }
 
-.repair-btn--icon {
+.btn__repair--icon {
     background-image: url("upper-menu-image/repair-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-
-
-
 
 .upper-menu-desktop__check-status{
     display: inline-block;
@@ -145,19 +145,12 @@ html {
     margin-left: 32px;
     position: relative;
 }
-
-.check-status-btn {
-    display: block;
+.btn__check-status {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background: #FF3E79;
-    border-radius: 50%;
     top: 7px;
     right: 0;
 }
-.check-status-btn--icon {
+.btn__check-status--icon {
     background-image: url("upper-menu-image/checkstatus-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
