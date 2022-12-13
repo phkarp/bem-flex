@@ -16,25 +16,29 @@
     .about__text--off-mobile {
         display: block;
     }
+    .btn--off-mobile {
+        display: block;
+    }
 
 
-    .logo--margin {
+    .logo__margin {
         margin-left: 16px;
         margin-right: auto;
     }
-    .upper-menu__chat {
+    .btn__chat--upper-menu {
         margin-left: 16px;
     }
-    .upper-menu__profile {
+    .btn__profile--upper-menu {
         margin-left: 16px;
     }
     .upper-menu__divider {
         margin-left: 16px;
     }
-    .repair--position {
+    .btn__repair--upper-menu {
         margin-left: 20px;
     }
-    .check-status--position {
+
+    .btn__check-status--upper-menu {
         margin: 0 16px;
     }
 
@@ -60,7 +64,7 @@
         color: #7E7E82;
         list-style: none;
     }
-    .list-menu__elem {
+    .slide-menu__list-menu--elem {
         padding-left: 16px;
         margin-bottom: 22px;
     }

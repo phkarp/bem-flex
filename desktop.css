@@ -26,62 +26,13 @@ html {
     display: block;
 }
 
-
-
-
-.logo--margin {
+.logo__margin {
     margin-left: 16px;
     margin-right: auto;
 }
-.upper-menu__chat {
-    margin-left: 16px;
-}
-.upper-menu__profile {
-    margin-left: 16px;
-}
+
 .upper-menu__divider {
     margin-left: 16px;
-}
-.repair--position {
-    font-family: "TT Lakes Bold", sans-serif;
-    font-size: 16px;
-    color: #1B1C21;
-    text-decoration: none;
-    margin-left: auto;
-    display: flex;
-}
-.repair__repair-text {
-    display: block;
-}
-.repair__repair-img {
-    padding-left: 9px;
-}
-.check-status--position {
-    font-family: "TT Lakes Bold", sans-serif;
-    font-size: 16px;
-    color: #1B1C21;
-    text-decoration: none;
-    margin-left: 32px;
-    display: block;
-    height: 55px;
-}
-.check-status__checkstatus-text {
-    width: 200px;
-}
-
-.check-status__checkstatus-text::after {
-    content: " ";
-    display: block;
-    position: relative;
-    top: -30px;
-    right: -135px;
-    width: 40px;
-    height: 40px;
-    background: url("upper-menu-image/checkstatus.svg") no-repeat;
-}
-.check-status__checkstatus-img {
-    display: none;
-    padding-left: 9px;
 }
 
 .upper-menu-desktop {
@@ -112,28 +63,14 @@ html {
     margin-bottom: 10px;
 
 }
-.btn {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background: #FF3E79;
-    border-radius: 50%;
-}
-.btn__repair {
 
-}
-
-.btn__repair--upper-menu {
+.btn__repair--upper-menu-desktop {
     position: absolute;
     top: 7px;
     right: 0;
 }
 
-.btn__repair--icon {
-    background-image: url("upper-menu-image/repair-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
+
 
 .upper-menu-desktop__check-status{
     display: inline-block;
@@ -147,19 +84,13 @@ html {
     margin-left: 32px;
     position: relative;
 }
-.btn__check-status {
-    
-}
-.btn__check-status--upper-menu {
+
+.btn__check-status--upper-menu-desktop {
     position: absolute;
     top: 7px;
     right: 0;
 }
-.btn__check-status--icon {
-    background-image: url("upper-menu-image/checkstatus-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
+
 
 .main {
     background-color: #F8F8F8;
@@ -176,10 +107,6 @@ html {
     font-size: 16px;
     color: #7E7E82;
     list-style: none;
-    padding-left: 16px;
-    margin-bottom: 20px;
-}
-.list-menu__elem {
     padding-left: 16px;
     margin-bottom: 22px;
 }
