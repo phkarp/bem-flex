@@ -112,7 +112,7 @@ html {
     margin-bottom: 10px;
 
 }
-.upper-menu-desktop__repair-btn {
+.repair-btn {
     display: block;
     position: absolute;
     width: 40px;
@@ -124,7 +124,7 @@ html {
     right: 0;
 }
 
-.upper-menu-desktop__repair-btn--icon {
+.repair-btn--icon {
     background-image: url("upper-menu-image/repair-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -146,7 +146,7 @@ html {
     position: relative;
 }
 
-.upper-menu-desktop__check-status-btn {
+.check-status-btn {
     display: block;
     position: absolute;
     width: 40px;
@@ -157,7 +157,7 @@ html {
     top: 7px;
     right: 0;
 }
-.upper-menu-desktop__check-status-btn--icon {
+.check-status-btn--icon {
     background-image: url("upper-menu-image/checkstatus-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
