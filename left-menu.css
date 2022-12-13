@@ -7,6 +7,14 @@ html {
 *, *:after, *:before {
     box-sizing: inherit;
 }
+/*.btn повторяется в 1.3*/
+.btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #FF3E79;
+    border-radius: 50%;
+}
 
 .body {
     margin: 0;
@@ -32,15 +40,10 @@ html {
     align-items: center;
 }
 
-.header__btn-burger {
-    border: none;
-    background: #FF3E79 url("image-for-left-menu/burger.svg") no-repeat 50% 50%;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+.btn__burger--left-menu {
     transition: all 2s ease 0s;
 }
-.header__btn-burger:hover {
+.btn__burger--left-menu:hover {
     transform: rotate(360deg);
 }
 .header__img-logo {
@@ -48,53 +51,83 @@ html {
     width: 100px;
     height: 50px;
 }
-.header__btn-search {
-    border: none;
-    background: #FF3E79 url("image-for-left-menu/search.svg") no-repeat 50% 50%;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+.btn__search--left-menu {
     margin-right: 10px;
     margin-left: auto;
     transition: all 2s ease 0s;
 }
-.header__btn-search:hover {
+.btn__search--left-menu:hover {
     transform: rotate(360deg);
 }
+.btn__search--icon {
+    background-image: url("menu-image/search.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.btn__burger--left-menu {
+    transition: all 2s ease 0s;
+}
+.btn__burger--left-menu:hover {
+    transform: rotate(360deg);
+}
+
+.btn__call--left-menu {
+    transition: all 2s ease 0s;
+}
+.btn__call--left-menu:hover {
+    transform: rotate(360deg);
+}
+
+.btn__chat--left-menu {
+    margin-left: 16px;
+    transition: transform 2s ease 0s;
+
+}
+.btn__chat--left-menu:hover {
+    transform: rotate(360deg);
+}
+
+.btn__profile--left-menu {
+    margin-left: 16px;
+    transition: all 2s ease 0s;
+}
+.btn__profile--left-menu:hover {
+    transform: rotate(360deg);
+}
+
+
 
 .main-menu {
     margin: 0;
     padding: 0;
 }
 
-.list-menu {
+.main-menu__list-menu {
     list-style: none;
     font-size: 16px;
-    margin: 0;
+    margin: 40px 0 0 0;
     padding: 0;
 }
 
-.list-menu--position {
-    margin-top: 40px;
-}
 
-.list-menu__item {
+.main-menu__list-menu--item {
     margin-bottom: 32px;
     padding-left: 20px;
 }
-.list-menu__item:last-child {
+.main-menu__list-menu--item:last-child {
     margin-bottom: 0;
 }
-.list-menu__item-link {
+
+.main-menu__list-menu--item-link {
     display: block;
     color: black;
     text-decoration: none;
 }
 
-.list-menu__item-link--active {
+.main-menu__list-menu--item-link--active {
     color: #7E7E82;
 }
-.list-menu__item-link--active::before {
+.main-menu__list-menu--item-link--active::before {
     content: "";
     display: block;
     position: absolute;
@@ -111,7 +144,7 @@ html {
     margin: 0;
     padding: 0;
 }
-.footer--position {
+.footer__position {
     margin-top: auto;
     padding-bottom: 32px;
 }
@@ -119,24 +152,13 @@ html {
     margin: 0 0 16px 16px;
 }
 
-.footer__btn-call {
-    border: none;
-    background: #FF3E79 url("image-for-left-menu/call.svg") no-repeat 50% 50%;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    transition: all 2s ease 0s;
-}
-.footer__btn-call:hover {
-    transform: rotate(360deg);
-}
 .footer__btn-chat {
     border: none;
-    background: #FF3E79 url("image-for-left-menu/chat.svg") no-repeat 50% 50%;
+    background: #FF3E79 url("menu-image/chat.svg") no-repeat 50% 50%;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    margin-left: 16px;
+
     transition: all 2s ease 0s;
 }
 .footer__btn-chat:hover {
@@ -144,7 +166,7 @@ html {
 }
 .footer__btn-profile {
     border: none;
-    background: #FF3E79 url("image-for-left-menu/profile.svg") no-repeat 50% 50%;
+    background: #FF3E79 url("menu-image/profile.svg") no-repeat 50% 50%;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -160,12 +182,16 @@ html {
 .footer__email {
     display: inline-block;
     margin: 0 0 12px 0;
+    text-decoration: none;
+    color: #1B1C21;
 }
 .footer__phone {
     display: inline-block;
     font-family: "TT Lakes Bold", sans-serif;
     font-size: 24px;
     margin: 0 0 40px 0;
+    text-decoration: none;
+    color: #1B1C21;
 }
 .footer__language {
     margin-left: 20px;
@@ -173,39 +199,48 @@ html {
     font-size: 16px;
 }
 
-.footer__language--active {
+.footer__label {
+
+}
+
+.footer__input {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    appearance: none;
+}
+
+.footer__input:checked + label {
     color: #7E7E82;
 }
 
-.footer__ru {
-    border: none;
-    background: none;
-    font-family: inherit;
-    font-size: inherit;
-    transition: all 200ms ease 0s;
-}
-.footer__ru:hover {
-    transform: scale(1.1);
+.footer__label {
+    margin-right: 15px;
 }
 
-.footer__en {
-    border: none;
-    background: none;
-    font-family: inherit;
-    font-size: inherit;
-    transition: all 200ms ease 0s;
-}
-.footer__en:hover {
-    transform: scale(1.1);
+/*повторяющийся код с 1.3, не учитывать при переносе*/
+
+
+.btn__burger--icon-close {
+    background-image: url("menu-image/burger-close.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
-.footer__ch {
-    border: none;
-    background: none;
-    font-family: inherit;
-    font-size: inherit;
-    transition: all 200ms ease 0s;
+.btn__call--icon {
+    background-image: url("menu-image/call.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
-.footer__ch:hover {
-    transform: scale(1.1);
+
+.btn__chat--icon {
+    background-image: url("menu-image/chat.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.btn__profile--icon {
+    background-image: url("menu-image/profile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }

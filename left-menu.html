@@ -10,37 +10,41 @@
 <body class="body">
 <section  class="left-menu">
 <header class="header">
-    <button class="header__btn-burger"></button>
-    <img src="image-for-left-menu/logo.svg" alt="logo CPS" class="header__img-logo">
-    <button class="header__btn-search"></button>
+    <button class="btn btn__burger btn__burger--left-menu btn__burger--icon-close "></button>
+    <img src="menu-image/logo.svg" alt="logo CPS" class="header__img-logo">
+    <button class="btn btn__search btn__search--left-menu btn__search--icon"></button>
 </header>
     <nav class="main-menu">
-        <ul class="list-menu list-menu--position">
-            <li class="list-menu__item list-menu__item--active"><a href="#" class="list-menu__item-link list-menu__item-link--active">Ремонт техники</a></li>
-            <li class="list-menu__item"><a href="#" class="list-menu__item-link">Услуги и сервисы</a></li>
-            <li class="list-menu__item"><a href="#" class="list-menu__item-link">Корпоративным клиентам</a></li>
-            <li class="list-menu__item"><a href="#" class="list-menu__item-link">Продавцам техники</a></li>
-            <li class="list-menu__item"><a href="#" class="list-menu__item-link">Партнерам</a></li>
-            <li class="list-menu__item"><a href="#" class="list-menu__item-link">Производителям</a></li>
-            <li class="list-menu__item"><a href="#" class="list-menu__item-link">Наши сервисные центры</a></li>
-            <li class="list-menu__item"><a href="#" class="list-menu__item-link">Контакты</a></li>
+        <ul class="main-menu__list-menu">
+            <li class="main-menu__list-menu--item"><a href="#" class="main-menu__list-menu--item-link main-menu__list-menu--item-link--active">Ремонт техники</a></li>
+            <li class="main-menu__list-menu--item"><a href="#" class="main-menu__list-menu--item-link">Услуги и сервисы</a></li>
+            <li class="main-menu__list-menu--item"><a href="#" class="main-menu__list-menu--item-link">Корпоративным клиентам</a></li>
+            <li class="main-menu__list-menu--item"><a href="#" class="main-menu__list-menu--item-link">Продавцам техники</a></li>
+            <li class="main-menu__list-menu--item"><a href="#" class="main-menu__list-menu--item-link">Партнерам</a></li>
+            <li class="main-menu__list-menu--item"><a href="#" class="main-menu__list-menu--item-link">Производителям</a></li>
+            <li class="main-menu__list-menu--item"><a href="#" class="main-menu__list-menu--item-link">Наши сервисные центры</a></li>
+            <li class="main-menu__list-menu--item"><a href="#" class="main-menu__list-menu--item-link">Контакты</a></li>
         </ul>
     </nav>
-<footer class="footer footer--position">
-    <section class="footer__btn-container">
-        <button class="footer__btn-call"></button>
-        <button class="footer__btn-chat"></button>
-        <button class="footer__btn-profile"></button>
-    </section>
-    <section class="footer__text">
-        <p class="footer__email">mail@cps.com</p>
-        <p class="footer__phone">8 800 890 8900</p>
-    </section>
-    <section class="footer__language">
-        <button class="footer__ru footer__language--active">RU</button>
-        <button class="footer__en">EN</button>
-        <button class="footer__ch">CH</button>
-    </section>
+<footer class="footer footer__position">
+    <div class="footer__btn-container">
+        <button class="btn btn__call btn__call--left-menu btn__call--icon "></button>
+        <button class="btn btn__chat btn__chat--left-menu btn__chat--icon "></button>
+        <button class="btn btn__profile btn__profile--left-menu btn__profile--icon "></button>
+    </div>
+    <div class="footer__text">
+        <a href="mailto:karpushkin_ioann@mail.ru" class="footer__email">mail@cps.com</a>
+        <a href="tel:+79003768745" class="footer__phone">8 800 890 8900</a>
+    </div>
+    <div class="footer__language">
+
+            <input type="radio" name="language" id="language-ru" class="footer__input footer__input-ru" checked>
+            <label for="language-ru" class="footer__label"> RU </label>
+            <input type="radio" name="language" id="language-en" class="footer__input footer__input-en">
+            <label for="language-en" class="footer__label"> EN </label>
+            <input type="radio" name="language" id="language-ch" class="footer__input footer__input-ch">
+            <label for="language-ch" class="footer__label">CH</label>
+    </div>
 
 </footer>
 </section>
