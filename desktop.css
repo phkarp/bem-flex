@@ -86,26 +86,27 @@ html {
 
 .upper-menu-desktop {
     display: flex;
-    align-items: center;
+    justify-content: normal;
     width: 100%;
     height: 88px;
     padding: 18px 16px 18px 0;
     background-color: #F8F8F8;
 }
-
+/*
 .upper-menu-desktop__btn {
     display: flex;
     align-items: center;
-}
+}*/
 .upper-menu-desktop__repair {
     display: inline-block;
     font-family: "TT Lakes Bold", sans-serif;
     font-size: 16px;
     color: #1B1C21;
-    width: 200px;
+    width: 195px;
     height: 55px;
     padding: 10px;
     line-height: 32px;
+    margin-left: auto;
     position: relative;
 }
 
@@ -120,8 +121,42 @@ html {
     top: 7px;
     right: 0;
 }
+
 .upper-menu-desktop__repair-btn--icon {
-    background-image: url("upper-menu-image/Group.svg");
+    background-image: url("upper-menu-image/repair-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+
+
+.upper-menu-desktop__check-status{
+    display: inline-block;
+    font-family: "TT Lakes Bold", sans-serif;
+    font-size: 16px;
+    color: #1B1C21;
+    width: 190px;
+    height: 55px;
+    padding: 10px;
+    line-height: 32px;
+    margin-left: 32px;
+    position: relative;
+}
+
+.upper-menu-desktop__check-status-btn {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #FF3E79;
+    border-radius: 50%;
+    top: 7px;
+    right: 0;
+}
+.upper-menu-desktop__check-status-btn--icon {
+    background-image: url("upper-menu-image/checkstatus-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }

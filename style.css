@@ -11,9 +11,13 @@
     line-height: 40px;
     letter-spacing: -0.6px;
     color: #1B1C21;
-    width: 100%;
+    /*width: 100%;*/
     position: relative;
     margin: 0;
+}
+
+.upper-menu--off-mobile {
+    display: block;
 }
 
 .title-services::before {
