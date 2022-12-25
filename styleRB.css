@@ -89,11 +89,23 @@ body {
     height: 40px;
     border: 2px solid #FF3E79;
     border-radius: 50%;
-    background-image: url("brand-image/arrow-right.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     margin: 0 0 0 auto;
 }
+
+
+/*.link-container-brand__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+    background-image: url("brand-image/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 0 0 0 auto;
+}*/
 
 .swiper-pagination-bullet {
     width: 12px;
